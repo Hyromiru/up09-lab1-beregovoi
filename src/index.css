@@ -1,3 +1,41 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -38,7 +76,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.25em 1em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -54,6 +92,27 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.film_card{
+  width:250px;
+  height:560px;
+  text-align: center;
+  float:left;
+  margin:20px;
+}
+.film_card img{
+  width:250px;
+  height:400px;
+  margin-bottom:10px;
+}
+
+.film_card h3{
+  text-align:left;
+  font-size:20px;
+}
+
+.year_type_cont.year_type_cont h4{
+  text-align:left;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
