@@ -95,24 +95,30 @@ button:focus-visible {
 .film_card{
   width:250px;
   height:560px;
-  text-align: center;
   float:left;
   margin:20px;
 }
+
 .film_card img{
   width:250px;
   height:400px;
   margin-bottom:10px;
 }
 
-.film_card h3{
-  text-align:left;
-  font-size:20px;
+.film-name {
+  text-align: left;
 }
 
-.year_type_cont.year_type_cont h4{
-  text-align:left;
+.movie-type {
+  text-align: left;
 }
+
+.year-like-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

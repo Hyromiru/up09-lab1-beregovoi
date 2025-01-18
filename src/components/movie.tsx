@@ -31,12 +31,11 @@ const Movie = (props: IMovie) => {
         alt={props.Title}
         style={{ width: "250px", height: "auto" }}
       />
-      <h3>{props.Title}</h3>
-      <div className="year_type_cont">
-        <h4>{props.Type}</h4>
-        <h4>{props.Year}</h4>
-      </div>
-      <button
+      <h4 className="film-name">{props.Title}</h4>
+      <p className="movie-type">{props.Type}</p>
+      <div className="year-like-section">
+        <span>{props.Year}</span>
+        <button
         onClick={toggleLike}
         style={{
           background: "none",
@@ -52,6 +51,7 @@ const Movie = (props: IMovie) => {
           style={{ width: "24px", height: "24px" }}
         />
       </button>
+      </div>
     </div>
   );
 };
